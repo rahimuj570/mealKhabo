@@ -1,3 +1,47 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* NAVBAR STYLE START */
+.menuBtn {
+  transform: translateY(-40%);
+  transition-duration: 0.5s;
+}
+.menuBtn2 {
+  transform: translateY(0%);
+  transition-duration: 0.5s;
+}
+
+.navClick {
+  z-index: 2;
+  transform: translatex(0%) !important;
+  transition-duration: 0.6s;
+}
+.navClick2 {
+  z-index: 2;
+  transform: translatex(100%) !important;
+  transition-duration: 0.6s;
+}
+
+.navClick li {
+  cursor: pointer;
+}
+
+@media not all and (min-width: 768px) {
+  .mobileNav {
+    transform: translatex(130%);
+  }
+  .mobileNav li {
+    margin: 5px 10px !important;
+    padding: 5px;
+    font-weight: bold;
+    background-color: white;
+    border: 1px solid red;
+  }
+  .mobileNav li:hover {
+    background-color: rgb(197, 193, 193);
+    transition-duration: 0.3s;
+  }
+}
+
+/* NAVBAR STYLE END */
